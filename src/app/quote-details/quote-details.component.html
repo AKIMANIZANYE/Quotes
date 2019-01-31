@@ -1,5 +1,22 @@
-<p>{{quote.description}}</p>
-<p>This quote will be completed in {{quote.completeDate|dateCount}} days</p>
+<p>Inspiration and motivation  Quotes for women!
+</p>
 
-<button (click) = 'QuoteComplete(true)'> Complete </button>
-<button (click) = 'goalDelete(true)'> Delete quote </button>
+<p>Quote:{{quote.quote}}</p>
+
+ 
+
+
+<p>Author: {{quote.author}}</p>
+
+<p>Date: {{quotel.completeDate|date|uppercase}}</p>
+<p>upvote :{{quote.upvote}}</p>
+<p>Downvote :{{quote.downvote}}</p>
+<p>Submitted by:{{quote.username}}</p>
+
+<div id="btnUp">
+    <button (click)='upvote()' class="btn btn-success">Upvote</button>
+    <button (click)='downvote()' class="btn btn-warning" id="dwnVote">Downvote</button>
+   <button (click)= 'quoteComplete(true)' class=" btn btn-danger " id="delete">Delete</button>
+</div>
+<p id="subdate"> posted: {{quote.completeDate|dateCount}}  days</p>
+

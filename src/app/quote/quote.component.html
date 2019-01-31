@@ -1,9 +1,10 @@
 <h1>Defferences Quotes</h1>
 <ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-      <li >{{quote.name}}</li>
-      <button  (click)='toogleDetails(i)'>Toogle Details</button>
+  <div *ngFor='let quote of quote;let i = index'>
+      <li appStrikethrough>{{quote.name}}</li>
+      <button  (click)='toogleDetails(i)'>More Details</button>
 
-      <app-quote-details * *ngIf="goal.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+  <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+  
   </div>
 </ul>

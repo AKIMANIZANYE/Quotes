@@ -19,9 +19,13 @@ export class QuoteComponent implements OnInit {
     toogleDetails(index){
       this.Quotes[index].showDescription = !this.Quotes[index].showDescription;
   }
+  completeGoal(isComplete,index){
+    if (isComplete){
+        this.Quotes.splice(index,1);
+        
 
   constructor() { }
 
   ngOnInit() {
   }
-}
+}}}

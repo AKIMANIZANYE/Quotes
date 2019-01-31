@@ -1,4 +1,8 @@
 <h1>Defferences Quotes</h1>
+<div class="container">
+  <div class="row">
+      <app-goal-form></app-goal-form>
+  
 <ul>
   <div *ngFor='let quote of quote;let i = index'>
     <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
@@ -8,3 +12,4 @@
   
   </div>
 </ul>
+</div>

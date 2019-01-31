@@ -1,4 +1,9 @@
-<h1>Deffernces Quotes</h1>
+<h1>Defferences Quotes</h1>
 <ul>
-    <li *ngFor='let quote of quotes'>{{goal.name}}</li>   
+  <div *ngFor='let quote of quotes;let i = index'>
+      <li >{{quote.name}}</li>
+      <button  (click)='toogleDetails(i)'>Toogle Details</button>
+
+      <app-quote-details *ngIf="quote.showDescription" [quote]='quote'></app-quote-details>
+  </div>
 </ul>

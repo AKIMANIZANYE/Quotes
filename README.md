@@ -9,6 +9,8 @@ This project was generated with [Angular CLI] and my link on  repository
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+###Behavoir Driven Development
+I created form where use is supposed to enter his/her information and also the is detals where user might click on the  details button and see more details about the quote.
 
 ## Code scaffolding
 

@@ -2,23 +2,24 @@
 
   <div class="row">
     <div class= col-md-6 id="form">
-      <app-quote-form (addQuote)="addNewQuote(sevent)"></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
   </div>
   <div class="col-md-6" id="qot">
 <ol>
   <div *ngFor='let quote of quote;let i = index' class="list">
-    <div class="row">
+    <div >
+        <li  id="{{i}}" appStrikethrough class="num"{{quote.Title}}></li>
 
-    <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
+
+    <!-- <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li> -->
   </div>
   <div class="col-md-6">
     <button  (click)='toogleDetails(i)' class="btn-info btn-md" id="detail">More Details</button>
     </div>
   </div>
-      <app-quote-details *ngIf="quote.showauthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+      <app-quote-details *ngIf="quote.showauthor" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
   
   </div></ol></div>
-</ol>
 
 </div>

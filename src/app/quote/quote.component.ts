@@ -17,14 +17,14 @@ import {Quote} from '../quote';
       new Quote( 'Quote about believe','lilianne','“Love what you do and do what you love. " ', 'Clarisse', new Date(1997,9,14) ,0,0),
 
   ]
-  addNewGoal(goal){
-    let goalLength = this.Quote.length;
-    goal.id=goalLength+1;
-    goal.completeDate = new Date(goal.completeDate)
-    this.Quote.push(goal)
+  addNewQuote(quote){
+    let quoteLength = this.Quote.length;
+    quote.id=quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.Quote.push(quote)
 
 }
-  deleteGoal(isComplete,index){
+  deleteQuote(isComplete,index){
     if (isComplete){
         let toDelete=confirm(`Are you sure you want to delete ${this.Quote[index].quote
         }`)
@@ -35,7 +35,7 @@ import {Quote} from '../quote';
     }
 }
 
-  completeGoal(isComplete,index){
+  completeQuote(isComplete,index){
     if (isComplete){
         this.Quote.splice(index,1);
         }

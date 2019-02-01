@@ -4,7 +4,7 @@
 ##Project description. 
 This  project is about how you can view defferent Quotes  you can view   quotesee auther,quote itself not only that you that see the number of upvote and downvote furthmer more you can delete the quote!
 
-This project was generated with [Angular CLI] and my link on  repository 
+This project was generated with [Angular CLI] and my link on  repository https://github.com/AKIMANIZANYE/Quotes.git
 
 ## Development server
 

@@ -1,5 +1,5 @@
 import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
-import {Quote} from '../quote'
+import {Quote} from '../quote';
 
 @Component({
   selector: 'app-quote-details',
@@ -11,7 +11,7 @@ export class QuoteDetailsComponent implements OnInit {
     @Input() quote:Quote;
     @Output() isComplete= new EventEmitter<boolean>();
   
-    goalComplete(complete:boolean){
+    quoteComplete(complete:boolean){
       this.isComplete.emit(complete);
     }
     upvote(){

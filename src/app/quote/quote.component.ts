@@ -35,16 +35,16 @@ import {Quote} from '../quote';
     }
 }
 
-  completeQuote(isComplete,index){
-    if (isComplete){
-        this.Quote.splice(index,1);
-        }
-        }
+  // completeQuote(isComplete,index){
+  //   if (isComplete){
+  //       this.Quote.splice(index,1);
+  //       }
+  //       }
         
         toogleDetails(index){
           this.Quote[index].showDescription = !this.Quote[index].showDescription;
       }
-
+constructor(){}
         ngOnInit(){}
       }
      

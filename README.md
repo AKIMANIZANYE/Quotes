@@ -1,6 +1,7 @@
 # Quotes
+This  project is about how you can view defferent Quotes  you can view   quotesee auther,quote itself not only that you that see the number of upvote and downvote furthmer more you can delete the quote!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+This project was generated with [Angular CLI] and my link on  repository 
 
 ## Development server
 
@@ -29,5 +30,5 @@ HTML
 Boostrap
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
 # Quotes

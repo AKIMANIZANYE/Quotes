@@ -1,4 +1,7 @@
-# Quotes
+
+
+##Project name.: Quotes
+##Project description. 
 This  project is about how you can view defferent Quotes  you can view   quotesee auther,quote itself not only that you that see the number of upvote and downvote furthmer more you can delete the quote!
 
 This project was generated with [Angular CLI] and my link on  repository 
@@ -11,16 +14,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://AKIMANIZANYE.github.io).
-
-.
-
 ## Technology 
 Angular
 CSS
@@ -29,4 +25,9 @@ Boostrap
 ## Further help
 
 
-# Quotes
+##Contact information
+Email: akimanizanyeclaudine@gmail.com Phone:0789616355
+
+#License and Copyright information.
+
+copyright: Claudine Akimanizanye 2019

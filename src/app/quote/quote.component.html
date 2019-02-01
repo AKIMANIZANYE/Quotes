@@ -1,16 +1,24 @@
 <h1>Defferences Quotes</h1>
-<div class="container">
-  <div class="row">
-      <app-quote-form></app-quote-form>
-  
-<ul>
-  <div *ngFor='let quote of quote;let i = index'>
-    <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
-      <button  (click)='toogleDetails(i)'>More Details</button>
 
-      <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-  
+  <div class="row">
+    <div class= col-md-6 id="form">
+      <app-quote-form (addQuote)="addNewQuote(sevent)"></app-quote-form>
+
   </div>
-</ul>
+  <div class="col-md-6" id="qot">
+<ol>
+  <div *ngFor='let quote of quote;let i = index' class="list">
+    <div class="row">
+
+    <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
+  </div>
+  <div class="col-md-6">
+    <button  (click)='toogleDetails(i)' class="btn-info btn-md" id="detail">More Details</button>
+    </div>
+  </div>
+      <app-quote-details *ngIf="quote.showauthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+  
+  </div></ol></div>
+</ol>
 
 </div>

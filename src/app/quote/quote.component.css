@@ -1,16 +1,15 @@
-h1,h3{
+h1{
     text-align:center;
 
-
-
 }
-ul{
-    margin-left: 24%;
+
+ol{
+    margin-left: 40%;
 }
 #form{
     margin-left: 10%;
 }
-#mdetails{
+#detail{
 
     margin:2%;
     margin-left:15%;

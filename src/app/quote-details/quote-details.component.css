@@ -3,9 +3,9 @@ P{
     font-family: Helvetica;
 }
 body{
-    background-color: grey;
+    background-color: goldenrod;
 }
 p{
     font-style: italic;
-    color:white;
+    color :rgb(67, 114, 24)255, 234, 234);
 }
